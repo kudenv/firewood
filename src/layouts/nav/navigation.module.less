@@ -1,0 +1,173 @@
+.headContent {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 1128px;
+
+    :global {
+        .ant-row {
+            min-width: 100%;
+
+            .ant-col:nth-child(2) {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            @media screen and (max-width: 600px) {
+                .ant-col:nth-child(2) {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+
+    .headTitle {
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .headMenu {
+        display: flex;
+        flex-wrap: wrap;
+
+        ul {
+            margin: 14px;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
+
+        li {
+            margin-right: 1em;
+            flex: 1 0 auto;
+            text-align: center;
+        }   
+        
+        li a {
+            font-size: 14px;
+            margin: 2px;
+            padding: 0px;
+            font-style: normal;
+            font-family: unset;
+            font-weight: 600;
+            color: rgb(0 0 0/.9)
+        }
+    }
+
+    .mobileMenuDrawerBtn {
+        display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+        .mobileMenuDrawerBtn {
+            display: block;
+        }
+
+        .headMenu {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 950px) {               
+        .showTopNavLabels {
+            display: none;
+        }
+    }
+
+    .show {
+        display: block !important;
+    }
+    
+    .subMenu {
+        display: none
+    }
+    
+    .profileSubMenuPopup {   
+        position: absolute; 
+        width: 200px;
+        padding: 1.2rem;
+        background-color: #fff;
+        overflow-x: hidden;
+        overflow: hidden;
+        z-index: 1000;
+        overflow-y: hidden;
+        .defaultMenuItemStyles {
+            height: 112px !important;
+            padding-inline: 0px !important;
+    
+            .profileSubMenuHeaderRow {
+                margin: 12px 9px 1px !important;
+            }
+        }
+    
+        .defaultMenuItemStyles:hover {
+            background-color: none !important;
+            cursor: pointer !important;
+        }
+    
+        .defaultMenuItemAccountStyles {
+            margin-bottom: 12px;
+    
+            .accountProfileSubMenu {
+                display: list-item;
+                text-align: justify;
+    
+                a {
+                    display: block;
+                    text-decoration: none;
+                    padding: 0.8em 2em;
+                }
+            }
+        }
+    
+        .profileSubMenuMeta {
+            line-height: 16px;
+    
+            h1 {
+                font-size: 15px;
+                margin: 2px;
+                padding: 0px;
+                font-style: normal;
+                font-family: unset;
+                font-weight: 600;
+            }
+    
+            h2 {
+                font-size: 14px;
+                margin: 2px;
+                padding: 0px;
+                font-style: normal;
+                font-family: unset;
+                font-weight: 500;
+    
+            }
+        }
+    
+        .profileSubMenuBtn {
+            button {
+                background-color: #fff;
+                box-shadow: none;
+                border: 1px solid #1677ff;
+                color: #1677ff;
+                font-weight: 600;
+                width: 100%;
+                font-size: 12px;
+                padding: 2px auto;
+                height: 26px;
+                outline: none;
+                // outline: 4px solid #91caff;
+                outline-offset: 1px
+            }
+    
+            button:hover {
+                background-color: #fff;
+                color: #1677ff;
+            }
+    
+            //box-shadow: 0 2px 0 rgba(5, 145, 255, 0.1);  
+        }
+    }
+}

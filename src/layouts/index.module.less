@@ -1,0 +1,32 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.appLayout {
+
+  .appHeader {
+    background: #fff;
+    position: sticky;
+    width: 100vw;
+    top: 0;
+    z-index: 105;
+    display: flex;
+    align-items: center;
+    line-height: 0px;
+    height: 44px;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,.03), 0 1px 6px -1px rgba(0,0,0,.02), 0 2px 4px 0 rgba(0,0,0,.02);
+  }
+
+  :global {}
+
+  @media screen and (min-width: 52em) {
+    .centered {
+      max-width: 52em;
+    }
+  }
+
+  .appContent {}
+
+  .appfooter {}
+}
