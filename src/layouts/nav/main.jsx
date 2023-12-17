@@ -26,6 +26,7 @@ const Navigation = () => {
         <Col span={18}>
           <div className={styles.headMenu}>
             <LeftMenu />
+            asdasd
             <RightMenu />        
           </div>
           <Button

@@ -11,7 +11,7 @@ const AppLayout = () => {
   return (      
     <Layout className={styles.appLayout}>
       <Header className={styles.appHeader}><MainNavigation /></Header>
-      <Content className={styles.appContent}>Content</Content>
+      <Content className={styles.appContent}><Outlet /></Content>
       <Footer className={styles.appFooter}>Footer</Footer>
     </Layout>
   );

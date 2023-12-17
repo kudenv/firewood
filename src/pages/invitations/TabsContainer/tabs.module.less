@@ -1,0 +1,66 @@
+@import "@/theme/public.less";
+
+.tabsContainerWrapper {
+  .tabsContainer{
+    padding: 0;
+    :global {
+      .ant-tabs-nav-list {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        .ant-tabs-tab {
+          width: 78px;
+          justify-content: center;
+          .ant-tabs-tab-btn {
+            font-size: 16px;
+            font-weight: 500;
+            color: rgb(0 0 0/.75) !important;
+          }
+        }
+        .ant-tabs-tab-active {
+          .ant-tabs-tab-btn {
+            color:#ffffff !important;
+            background-color: #01754f;
+            padding: 0 15px;
+            border-radius: 1.6rem;
+          }
+        }
+
+        .ant-tabs-ink-bar {
+          display: none;
+          background: none;
+        }
+        .ant-tabs-tab+.ant-tabs-tab {
+          margin: 0;
+        }
+        //.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+        //  color:#ffffff !important;
+        //  background-color: #01754f;
+        //  padding: 0 15px;
+        //  border-radius: 1.6rem;
+        //}
+      }
+    }
+  }
+
+
+  .userInviteWrapper {
+    .userInviteData {
+      margin-bottom: 10px;
+      .inviteAvatar {
+      }
+      .userMeta {
+        padding-left: 10px;
+        line-height: normal;
+      }
+    }
+    .textButton {
+      margin-right: 10px;
+    }
+    .roundButton {
+      color: #0a66c2;
+      font-weight: 500;
+      border-radius: 1.6rem;
+    }
+  }
+}
