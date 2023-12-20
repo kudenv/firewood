@@ -1,3 +1,3 @@
-import InvitationManager from './invitations';
+import Invitations from './invitations';
 
-export default InvitationManager;
+export default Invitations;

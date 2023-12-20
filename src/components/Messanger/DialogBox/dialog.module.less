@@ -1,0 +1,105 @@
+.swapMessageBox {
+  transform: translateY(100%) translateY(-48px) !important;
+  transition-timing-function: cubic-bezier(.4,0,1,1) !important;
+  .messageOverlayDialogWrapper {
+    width: 184px;
+    .messageOverlayBubbleHeader {
+      .headerTitle {
+        .titleDetails {
+          .messageButton {
+            padding: 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.pageDialogBox {
+  width: auto !important;
+}
+
+.messageOverlayDialogWrapper {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  max-height: calc(100vh - 100px);
+  width: 336px;
+  background: #ffffff;
+  box-shadow: var(--elevation-raised);
+  transform: translateY(0);
+  transition-timing-function: cubic-bezier(0, 0, .2, 1);
+  transition-duration: 167ms;
+  border-radius: 0.8rem 0.8rem 0 0;
+  margin-left: 10px;
+
+  .messageOverlayBubbleHeader {
+    align-items: center;
+    padding: 0 0.8rem;
+    min-height: 48px;
+    position: relative;
+    border-radius: 0.8rem 0.8rem 0 0;
+    background-clip: padding-box;
+    background-color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid rgb(140 140 140/.2);
+
+    .headerTitle {
+      animation: fadeIn ease var(--duration-fast);
+      animation-fill-mode: forwards;
+      overflow: hidden;
+
+      .titleDetails {
+        .messageButton {
+          color: rgb(0 0 0/.9);
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .swapHeaderActions {
+      display: none;
+    }
+
+    .headerActions {
+      button {
+        color: rgb(0 0 0/.6);
+      }
+    }
+  }
+
+  .messageContentWrapper {
+    .messageContentList {
+      height: 242px;
+      overflow-y: auto;
+      .messageContent {
+        margin-top: 1px;
+        padding: 5px 15px;
+        cursor: pointer;
+
+        .messageDetails {
+          margin-left: 10px;
+          line-height: normal;
+        }
+      }
+    }
+    .messageInputWrapper {
+      padding: 10px;
+      textarea {
+        resize: none;
+      }
+    }
+  }
+  .messageFooterWrapper {
+    align-items: center;
+    background-color: #fff;
+    border-top: 1px solid rgb(140 140 140/.2);
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 0.4rem 0.8rem;
+  }
+}

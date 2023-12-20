@@ -58,13 +58,19 @@ export default function LeftMenu() {
         <li>
           <Space size={10}>
             <MessageFilled />
-            <Link to="/messaging" className={styles.showTopNavLabels}>Messaging</Link>
+            <Link to="/connections" className={styles.showTopNavLabels}>Connections</Link>
           </Space>
         </li>
         <li>
           <Space size={10}>
             <NotificationFilled />
-            <Link to="/notifications" className={styles.showTopNavLabels}>Notifications</Link>
+            <Link to="/invitations" className={styles.showTopNavLabels}>Invitations</Link>
+          </Space>
+        </li>
+        <li>
+          <Space size={10}>
+            <NotificationFilled />
+            <Link to="/messaging" className={styles.showTopNavLabels}>Messaging</Link>
           </Space>
         </li>
       </ul>
